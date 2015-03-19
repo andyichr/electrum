@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /src
+pyrcc4 icons.qrc -o gui/qt/icons_rc.py

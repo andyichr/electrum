@@ -1,0 +1,11 @@
+#!/bin/bash
+
+yum -y install https://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+yum -y install python-pip PyQt4 PyQt4-devel xorg-x11-fonts-Type1
+
+cd /src
+pip install -e .
+
+if [[ ! -f /etc/profile.d/host-display.sh ]]; then
+  echo "export DISPLAY=unix$DISPLAY" > /etc/profile.d/host-display.sh
+fi

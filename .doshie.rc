@@ -1,0 +1,4 @@
+DOSHIE_PROJECT_NAME=electrum
+DOSHIE_DOCKER_FLAGS="-e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix"
+DOSHIE_ENV_UPDATE=.doshie-env/update
+DOSHIE_ENV_UPDATE_USER=.doshie-env/update-user
